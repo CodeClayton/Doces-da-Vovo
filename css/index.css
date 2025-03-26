@@ -1,0 +1,86 @@
+.saudation{
+    display: flex;
+    margin: 15px auto;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.saudation h1{
+    margin-top: 20px;
+    color: var(--Marrom-Escuro);
+    font-size: 38px;
+}
+
+.saudationLogo{
+    width: 60%;
+    max-width: 550px;
+    border-radius: 12px;
+}
+
+.titleProducts{
+    text-align: center;
+    color: var(--Marrom-Escuro);
+}
+
+.containerProducts{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 15px auto;
+    background-color: var(--Bege);
+    padding: 30px;
+    border-radius: 12px;
+    gap: 20px;
+}
+
+.containerProducts h3{
+    color: var(--Marrom-Escuro);
+    font-size: 30px;
+    text-indent: 15px;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.productItem{
+    width: 30%;
+    max-width: 200px;
+}
+
+.imageProduct{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.whatsapp{
+    width: 60%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #25D366;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.whatsapp h2, i{
+    color: var(--Branco);
+    font-size: 38px;
+}
+
+.whatsapp:hover{
+    transform: scale(1.05);
+    color: #21b758;
+}
