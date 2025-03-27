@@ -1,3 +1,5 @@
+//Pegando as tags HTML utilizando DOM
+
 const showHideMenu = document.querySelector('#showHideMenu');
 const navHeader = document.querySelector('.navHeader');
 const backToTop = document.querySelector('#backToTop');
@@ -53,4 +55,4 @@ toggleTheme.addEventListener('click',() => {
         document.documentElement.style.setProperty('--Preto','#272727');
         document.documentElement.style.setProperty('--Branco','#f2f2f2');
     }
-})
+});
