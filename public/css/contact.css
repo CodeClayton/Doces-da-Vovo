@@ -76,7 +76,7 @@ h1{
     background-color: var(--Marrom-Escuro);
 }
 
-
+/* Css do relatorio de resultados*/
 .containerResult{
     display: flex;
     width: 90%;

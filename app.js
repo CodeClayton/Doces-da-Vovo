@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3001;
 
+//Importando dependencias
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 
@@ -31,21 +32,24 @@ db.connect((err) => {
 
 //Iniciando Servidor
 app.listen(port,() => {
-  console.log(`Servidor iniciado na porta ${port}`)
+  //console.log(`Servidor iniciado na porta ${port}`)
+  console.log(`\nSite aberto!: \nPesquise em seu navegador:\n \nhttp://localhost:3001/\n \nPara acessar o site!`)
 })
 
 
-//Enviando Home
+//Envio da pagina inicial
 app.get('/',(req,res) => {
   res.sendFile(__dirname+'index.html')
 })
 
-//Enviando Formulario
+//Envio da pagina de contato 
 app.get('/contact',(req,res) => {
     res.sendFile(__dirname+'/public/html/contact.html')
 })
 
 app.post('/submit',(req,res) => {
+
+    //Recebe os dados do form.
     const {name, email, message } = req.body;
 
     //Utilizando queryes personalizadas 

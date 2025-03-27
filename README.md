@@ -4,20 +4,35 @@
     Projeto criado para uma doceria, foi utilizado as tecnologias:
      HTML,CSS,JS (Node), Bootstrap(framework), MySQL (Workbench).
 ## Requisitos:
+
     -MySQL
     -Xampp
     -Node (versão utilizada: v22.14)
+    -Editor de codigo para rodar o nodeJs (Vs Code utilizado)
+
 ## Diretorios:
+
     -node_modules
     -public
         -imagens de apoio
         -css
+            -contact.css
+            -global.css (configurações padrao do header, main e footer)
+            -index.css 
+            -quemSomos.css
         -html
+            -contact.html   
+            -quemSomos.html
         -js
-        index.html
+            -contact.js
+            -global.js
+
+        -index.html
     -app.js (servidor)
     README.md
+
 ## Como Usar:
+
     -Primeiro crie um banco de dados:
         CREATE DATABASE IF NOT EXISTS dbVovo;
 
@@ -38,11 +53,13 @@
 
     -Rode o projeto:
         node app.js
+
 ### Observações:
+
     Caso a conexão com o SQL retorne erro tente:
     -Mudar a senha do usuario usado:
         ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
     -Verifique se o Xampp esta funcionando corretamente (porta usada 3306)
 
-## FIM    
+## FIM 
 

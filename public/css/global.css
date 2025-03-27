@@ -94,7 +94,7 @@ main{
 
     .navHeader{
         width: 70%;
-        height: 70%;
+        height: 80%;
         background-color: var(--Bege);
         position: absolute;
         top: 100px;
@@ -103,6 +103,7 @@ main{
         justify-content: space-around;
         gap: 20px;
         flex-direction: column;
+        border-radius: 0 0 0 10px;
     }
 }
 
