@@ -8,6 +8,8 @@
     --Marrom-Claro:#8c3d35;
     --Preto: #272727;
     --Font: "Poppins", sans-serif;
+    /* Deixar a rolagem automatica suave*/
+    scroll-behavior: smooth;
 }
 
 *{
@@ -18,9 +20,11 @@
 
 body{
     font-family: var(--Font);
-    background-color: var(--Marrom-Escuro);
+    background-color: var(--Bege);
     transition: .3s;
 }
+
+/* Inicio Header*/
 
 header{
     width: 100%;
@@ -29,7 +33,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: var(--Bege);
+    background-color: var(--Branco);
     overflow: hidden;
 }
 
@@ -67,6 +71,7 @@ header{
     transform: scale(1.08);
 }
 
+/* Fim Header*/
 
 main{
     display: flex;
@@ -101,10 +106,13 @@ main{
     }
 }
 
+
+/* Inicio Footer */
+
 footer{
     display: flex;
     padding: 0 30px;
-    background-color: var(--Bege);
+    background-color: var(--Branco);
     width: 100%;
     height: 90px;
     align-items: center;
@@ -129,3 +137,19 @@ footer i:hover{
     color: var(--Marrom-Escuro);
 }
 
+@media (max-width:500px){
+    footer i{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 400px){
+    h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+}
+
+/* Fim Footer*/

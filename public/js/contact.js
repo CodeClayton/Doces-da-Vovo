@@ -17,7 +17,6 @@ form.addEventListener('submit',(e) => {
         alert('Preencha todos os campos!');
     }else{
         alert('Formulário enviado com sucesso \nvocê sera redirecionado!');
-
         form.submit();
     }
 })

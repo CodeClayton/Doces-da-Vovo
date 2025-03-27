@@ -32,5 +32,17 @@
             email VARCHAR(50) NOT NULL,
             message VARCHAR(500) NOT NULL
         );
+
+    -Após a criação do banco de dados, instale as dependencias:
+        npm install
+
+    -Rode o projeto:
+        node app.js
+### Observações:
+    Caso a conexão com o SQL retorne erro tente:
+    -Mudar a senha do usuario usado:
+        ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
+    -Verifique se o Xampp esta funcionando corretamente (porta usada 3306)
+
 ## FIM    
 
