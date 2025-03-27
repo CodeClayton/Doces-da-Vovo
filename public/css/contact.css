@@ -1,0 +1,85 @@
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: var(--Preto);
+    margin-top: 30px;
+}
+
+#formContact{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+    max-width: 600px;
+    background-color: var(--Bege);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px auto;
+    color: var(--Preto);
+    font-size: 25px;
+}
+
+.inputBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.inputBox label{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.inputBox input{
+    width: 90%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.inputBox textarea{
+    resize: none;
+    border: none;
+    background-color:white;
+    width: 100%;
+    min-height: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submitButton{
+    display: flex;
+    width: 60%;
+    max-width: 300px;
+    background-color: var(--Marrom-Claro);
+    padding: 10px;
+    border-radius: 6px;
+    color: var(--Branco);
+    font-family: var(--Font);
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 20px auto;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    transform: scale(1.03);
+    background-color: var(--Marrom-Escuro);
+}
+
+
+/* Css paleativo!*/
+.containerResult{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

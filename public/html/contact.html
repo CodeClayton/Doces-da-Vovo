@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <!--Links Globais-->
+    <link rel="stylesheet" href="../css/global.css">
+    <script src="../js/global.js" defer></script>
+    <script src="../js/contact.js" defer></script>
+ 
+    <link rel="stylesheet" href="../css/contact.css">
+ 
+    <!--FrameWork para icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="../Imagens de apoio/Doces_da_vovó_sem_marca-removebg-preview.png" alt="Logo Doces da Vovo" class="logoHeader">
+        </a>
+
+        <i class="bi bi-list" id="showHideMenu"></i>
+
+        <nav class="navHeader">
+            <a href="#catalogo" class="navItem">Catalógo</a>
+            <a href="#" class="navItem">Contato</a>
+            <a href="html/quemSomos.html" class="navItem">Quem Somos</a>
+            <i class="bi bi-moon-fill" id="toggleTheme"></i>
+        </nav>
+    </header>
+    <main>
+        <h1>Formulário para contato</h1>
+        <form action="submit" method="POST" id="formContact">
+            <section class="inputBox">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required placeholder="Seu Nome">
+            </section>
+            <section class="inputBox">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required placeholder="exemplo@exemplo.com">
+            </section>
+            <section class="inputBox">
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message" placeholder="Deixe aqui sua mensagem" required></textarea>
+            </section>
+            <button type="submit" class="submitButton">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <i class="bi bi-arrow-up-circle-fill" id="backToTop"></i>
+
+        <nav class="navFooter">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-envelope"></i>
+            <i class="bi bi-facebook"></i>
+        </nav>
+    </footer>
+</body>
+</html>
